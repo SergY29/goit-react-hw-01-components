@@ -1,4 +1,4 @@
-import user from "../user.json";
+import user from "./data/user.json";
 
 const statsInfo = user.stats;
 
@@ -19,5 +19,5 @@ export const App = () => {
   );
 };
 
-// console.log(user);
-// console.log(statsInfo);
+console.log(user);
+console.log(statsInfo);
