@@ -1,3 +1,7 @@
+import user from "../user.json";
+
+const statsInfo = user.stats;
+
 export const App = () => {
   return (
     <div
@@ -14,3 +18,6 @@ export const App = () => {
     </div>
   );
 };
+
+// console.log(user);
+// console.log(statsInfo);
