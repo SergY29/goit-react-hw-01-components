@@ -1,4 +1,5 @@
-import user from "./data/user.json";
+// import user from "./data/user.json";
+import user from "components/data/user.json";
 
 const statsInfo = user.stats;
 
