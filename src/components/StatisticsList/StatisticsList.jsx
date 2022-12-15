@@ -1,23 +1,24 @@
 import PropTypes from 'prop-types';
+import { Statistics } from "components/Statistic/Statistics";
 
-export const StatisticsList = ({ items, title }) => {
+export const StatisticsList = ({ stats, title }) => {
     // console.log({ items, title })
     return <section>
-        <h2>{title}</h2>
+        {title && (<h2>{title}</h2>)}
         <ul>
-            {items.map(item =>(
-            <li key={item.id}>
-
+            {stats.map(stat =>(
+                <li key={stat.id}>
+                    <Statistics
+                    label={stat.label}
+                    percentage={stat.percentage} />
             </li>))}
-
         </ul>
 </section>;
 }
 
-// Profile.propTypes = {
-//     username: PropTypes.string.isRequired,
-//     tag: PropTypes.string.isRequired,
-//     location: PropTypes.string.isRequired,
-//     avatar: PropTypes.string.isRequired,
-//     stats: PropTypes.objectOf(PropTypes.number.isRequired),
-// }
+StatisticsList.propTypes = {
+    title: PropTypes.string,
+    stats: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.string.isRequired,
+    })),
+}
