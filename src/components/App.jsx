@@ -8,7 +8,7 @@ import { StatisticsList } from "components/StatisticsList/StatisticsList";
 
 export const App = () => {
   return (
-    <div>
+    <>
     <Profile
       username={user.username}
       tag={user.tag}
@@ -17,7 +17,7 @@ export const App = () => {
       stats={user.stats} />
       <StatisticsList title="Upload stats" stats={data} />
       <StatisticsList stats={data} />
-    </div>
+    </>
   );
 };
 
