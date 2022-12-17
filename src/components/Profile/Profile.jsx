@@ -19,15 +19,15 @@ export const Profile = (props) => {
         </div>
 
         <ul className = {classNames(styles.stats)}>
-            <li>
+            <li className = {classNames(styles.item)}>
                 <span className = {classNames(styles.label)}>Followers</span>
                 <span className = {classNames(styles.quantity)}>{followers}</span>
             </li>
-            <li>
+            <li className = {classNames(styles.item)}>
                 <span className = {classNames(styles.label)}>Views</span>
                 <span className = {classNames(styles.quantity)}>{views}</span>
             </li>
-            <li>
+            <li className = {classNames(styles.item)}>
                 <span className = {classNames(styles.label)}>Likes</span>
                 <span className = {classNames(styles.quantity)}>{likes}</span>
             </li>

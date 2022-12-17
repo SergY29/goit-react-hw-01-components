@@ -1,8 +1,25 @@
 .item {
+    width: 300px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    justify-content:  flex-start;
+    border-radius: 8px;
+;
+
+    
+}
+
+.item:not(:last-child) {
+    margin-bottom: 15px;
 
 }
 
+
 .online{
+    margin-left: 10px;
+        margin-right: 10px;
     background-color: red;
     display: block;
     width: 15px;
@@ -11,6 +28,8 @@
 }
 
 .offline {
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: green;
     display: block;
         width: 15px;

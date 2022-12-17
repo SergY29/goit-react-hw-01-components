@@ -1,3 +1,28 @@
 .transaction_history {
-    
+    table-layout: fixed;
+        border-collapse: collapse;
+    margin-top: 15px;
+    width: 500px;
+    text-align: center;
+}
+
+.transaction_history > thead{
+    background-color: rgb(63, 157, 197);
+}
+
+.head > th:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+.row:nth-child(2n) {
+    background-color: rgb(209, 202, 202);
+}
+
+
+.row:nth-child(2n + 1) {
+    background-color: #fff;
+}
+
+.row > td:not(:last-child) {
+    border-right: 1px solid black;
 }
