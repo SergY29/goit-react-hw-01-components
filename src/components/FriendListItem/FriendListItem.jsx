@@ -13,7 +13,7 @@ export const FriendListItem = ({ friends } ) => {
 }
 
 FriendListItem.propTypes = {
-    friends: PropTypes.arrayOf(PropTypes.shape({
+    friends: PropTypes.arrayOf(PropTypes.exact({
         avatar: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         isOnline: PropTypes.bool.isRequired,
