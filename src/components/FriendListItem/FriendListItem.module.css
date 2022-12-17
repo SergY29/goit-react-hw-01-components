@@ -1,0 +1,27 @@
+.item {
+
+}
+
+.online{
+    background-color: red;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.offline {
+    background-color: green;
+    display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+}
+
+.avatar{
+
+}
+
+.name{
+    
+}

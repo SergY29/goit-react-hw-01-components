@@ -1,15 +1,18 @@
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
+import styles from 'components/Statistics/Statistics.module.css';
 
 export const Statistics = ({ stats, title }) => {
-    return <section>
-        {title && (<h2>{title}</h2>)}
-        <ul>
+    return <section className = {classNames(styles.statistics)}>
+        {title && (<h2 className = {classNames(styles.title)}>{title}</h2>)}
+        <ul className = {classNames(styles.statlist)}>
             {stats.map(({ id, label, percentage }) =>(
-                <li key={id} style={{
-                    backgroundColor: getRandomHexColor(),
+                <li key={id} className = {classNames(styles.item)}
+                    style={{backgroundColor: getRandomHexColor(),
                 }}>
-                    <span>{label}</span>
-                    <span>{percentage}%</span>
+                    <span className = {classNames(styles.label)}>{label}</span>
+                    <span className = {classNames(styles.percentage)}>{percentage}%</span>
                 </li>))}
         </ul>
 </section>;
